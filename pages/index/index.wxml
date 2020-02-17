@@ -1,0 +1,16 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="main-size">
+  <view class="searchbar" >
+    <icon  type="search" size="30"></icon>
+    <input class="searchbar-input" placeholder="搜索" />
+  </view>
+  
+  <view class="camerabox" bindtap="ontap">
+
+    <image class="photo" src="/images/camera.png" ></image>
+
+  </view>
+  <view class="background-img">
+    <image src="/images/333.png"></image>
+  </view>
+</view>

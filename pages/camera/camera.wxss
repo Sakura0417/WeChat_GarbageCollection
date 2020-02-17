@@ -1,0 +1,22 @@
+/* pages/camera/camera.wxss */
+
+.camera-size {
+  width: 100%;
+  /* height: 100vh; */
+
+  height: 300px;
+}
+
+.take-photo-button {
+  margin-top: 1000rpx;
+  width: 140rpx;
+  height: 140rpx;
+  margin-left: 305rpx;
+  
+
+/* background-color: white; */
+  border-radius: 50%;
+  /* display: block; */
+}
+
+

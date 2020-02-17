@@ -1,0 +1,36 @@
+<!--pages/details/details.wxml-->
+<view class="container">
+  <!-- 垃圾分类详细介绍 -->
+  <view class="box">
+    <view class="recoverable-garbage" bindtap="toRecoverable">
+      <image class="garbage-icon" src="../../images/recoverable-garbage.png"></image>
+      <text class="garbage-text">可回收垃圾</text >
+    </view>
+
+    <view class="harmful-waste" bindtap="toHarmful">
+      <image class="garbage-icon" src="../../images/harmful-waste.png"></image>
+      <text class="garbage-text">有害垃圾</text>
+    </view>
+
+    <view class="kitchen-waste" bindtap="toKitchen">
+      <image class="garbage-icon" src="../../images/kitchen-waste.png"></image>
+      <text class="garbage-text">厨余垃圾</text>
+    </view>
+
+    <view class="other-waste" bindtap="toOther">
+      <image class="garbage-icon" src="../../images/other-waste.png"></image>
+      <text class="garbage-text">其他垃圾</text>
+    </view>
+  </view>
+
+  <!-- 获取定位以及居住地相关垃圾分类新闻 -->
+
+  <view class="get-user-location">
+    <image src="../../images/location.png" class="img-size"></image>
+    <text> {{nation}} {{province}} {{city}} {{district}}</text>
+  </view>
+
+  <view class="news-box">
+    <view>相关城市新闻列表</view>
+  </view>
+</view>

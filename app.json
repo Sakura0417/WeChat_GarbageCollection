@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/text/text",
+    "pages/user/user",
+    "pages/camera/camera",
+    "pages/detail/detail",
+    "pages/recoverable-garbage/recoverable-garbage",
+    "pages/harmful-waste/harmful-waste",
+    "pages/kitchen-waste/kitchen-waste",
+    "pages/other-waste/other-waste",
+    "pages/goods/goods"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e0eee7",
+    "navigationBarTitleText": "垃圾分类",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/details/details",
+        "text": "详情",
+        "iconPath": "/images/detail.png",
+        "selectedIconPath": "/images/detail-selected.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "商品",
+        "iconPath": "/images/goods.png",
+        "selectedIconPath": "/images/goods-selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user-selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}
