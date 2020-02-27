@@ -5,14 +5,15 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    text: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    wx.removeStorageSync('input'),
+    wx.removeStorageSync('picture')
   },
 
   /**
@@ -125,6 +126,39 @@ Page({
 
 
   },
+
+  //获取搜索框输入的文字
+  onInput: function(event) {
+    var that = this
+    var val = event.detail.value
+    console.log(val)
+    that.setData({
+      inputValue: event.detail.value
+    })
+    wx.setStorage({
+      key: 'input',
+      data: event.detail.value,
+    })
+
+  },
+
+  onSearch: function(event) {
+
+    console.log("你点击了键盘搜索键")
+    wx.navigateTo({
+      url: '/pages/detail/detail',
+    })
+  },
+
+  // onSearch: function(event) {
+  //   var that = this
+
+  //   var searchpath = wx.getStorageSync('input')
+  //   that.setData({
+  //     iValue: searchpath
+  //   })
+  //   console.log(that.iValue)
+  // }
 
 
 })

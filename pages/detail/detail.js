@@ -11,65 +11,91 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    var that=this
-    var tempFilePaths= wx.getStorageSync('picture')
-this.setData({
-  userimage: tempFilePaths[0]
-})
+  onLoad: function(options) {
+    var that = this
+    var tempFilePaths = wx.getStorageSync('picture')
+    var searchpath = wx.getStorageSync('input')
+    this.setData({
+      userimage: tempFilePaths[0],
+      text:searchpath
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
+  onReady: function() {
+    var that = this
+    wx.request({
+      url: 'https://recover2.market.alicloudapi.com/recover_word',
+      data: {
+        name: wx.getStorageSync('input')
+      },
+      method: 'get',
+      header: {
+        'content-type': 'application/json',
+        'Authorization': 'APPCODE ' + 'c977859da234401b9dbe99c27b0a14d1',
+      },
 
+      success(res) {
+        console.log(res.data)
+
+      },
+      fail: function (res) {
+        console.log(res);
+      },
+      complete: function (res) {
+        console.log(res);
+      }
+
+    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {
+  onShow: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function () {
+  onHide: function() {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function () {
+  onUnload: function() {
     wx.removeStorage({
       key: 'picture',
       success(res) {
         console.log(res)
       }
     })
+    wx.removeStorageSync('input')
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function () {
+  onPullDownRefresh: function() {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function () {
+  onReachBottom: function() {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+  onShareAppMessage: function() {
 
   }
 })

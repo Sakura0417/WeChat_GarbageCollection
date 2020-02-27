@@ -2,7 +2,8 @@
 <view class="main-size">
   <view class="searchbar" >
     <icon  type="search" size="30"></icon>
-    <input class="searchbar-input" placeholder="搜索" />
+    <input class="searchbar-input" type="text"  placeholder="搜索" bindinput="onInput" bindconfirm="onSearch"/>
+
   </view>
   
   <view class="camerabox" bindtap="ontap">
