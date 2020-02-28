@@ -1,1 +1,70 @@
 /* pages/kitchen-waste/kitchen-waste.wxss */
+/* pages/recoverable-garbage/recoverable-garbage.wxss */
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffbf0;
+}
+
+.garbage_title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100rpx;
+  width: 680rpx;
+  height: 300rpx;
+  border-radius: 36rpx;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0rpx 0rpx 5rpx 3rpx lightgray;
+}
+
+.garbage_title  .img_size {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+}
+
+.garbage_title  .text_size {
+  margin: 0 20rpx 0 20rpx;
+  font-family: '宋体';
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.main_pic {
+  margin-top: 50rpx;
+  width: 600rpx;
+  height: 400rpx;
+  text-align: center;
+  border-top: 1rpx solid gainsboro;
+  padding-top: 45rpx;
+}
+.main_pic image{
+  width: 509.4rpx;
+  height: 363.2rpx;
+}
+
+.main_body {
+
+    border-top: 1rpx solid gainsboro;
+  padding-top: 45rpx;
+  width: 600rpx;
+}
+.main_body .main_body_title{
+  text-align: center;
+  font-family: '宋体';
+  font-size: 38rpx;
+}
+.main_body .main_body_text{
+  margin-top: 30rpx;
+}
+.main_body .main_body_text .text_style{
+  padding: 10rpx 0;
+    font-family: '宋体';
+  text-indent: 2em;
+  text-align: justify;
+  font-size: 34rpx;
+  line-height: 50rpx;
+}

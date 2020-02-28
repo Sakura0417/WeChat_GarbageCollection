@@ -1,2 +1,25 @@
-<!--pages/harmful-waste/harmful-waste.wxml-->
-<text>pages/harmful-waste/harmful-waste.wxml</text>
+<view class="box">
+  <view class="garbage_title">
+    <!-- 图标区域 -->
+    <view>
+      <image src="/images/harmful.png" class="img_size"></image>
+    </view>
+    <!-- 简介 -->
+    <view class="text_size">有害垃圾指废电池、废灯管、废药品、废油漆及其容器等对人体健康或者自然环境造成直接或者潜在危害的生活废弃物。有害有毒垃圾需特殊正确的方法安全处理。</view>
+  </view>
+
+  <view class="main_pic">
+    <image src="/images/harmful-list.png"></image>
+  </view>
+
+  <view class="main_body">
+    <view class="main_body_title">有害垃圾投放指导</view>
+    <view class="main_body_text">
+    <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
+      <view class="text_style">
+        {{item.data}}
+      </view>
+      </block>
+    </view>
+  </view>
+</view>

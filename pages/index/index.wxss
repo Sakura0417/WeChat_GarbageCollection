@@ -50,6 +50,5 @@ page {
 .background-img{
   height: 420rpx;
   width: 650rpx;
-
   overflow: hidden;
 }

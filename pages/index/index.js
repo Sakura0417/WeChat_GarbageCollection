@@ -88,6 +88,7 @@ Page({
               //res.tempFilePaths[0] 这个是图片
               const tempFilePaths = res.tempFilePaths
               console.log(tempFilePaths)
+              // 将图片路径放入缓存
               wx.setStorage({
                 key: 'picture',
                 data: res.tempFilePaths,
@@ -100,8 +101,9 @@ Page({
             },
           })
         } else if (res.tapIndex == 1) {
+
           wx.chooseImage({
-            count: 1,
+            count: 1, //选择图库中的图片
             sizeType: ['compressed'],
             sourceType: ['album'],
             success: function(res) {
@@ -114,6 +116,7 @@ Page({
               })
             },
             complete: function(res) {
+              // 完成后跳转到搜索详情页
               wx.navigateTo({
                 url: '/pages/search_detail/search_detail',
               })
@@ -127,7 +130,7 @@ Page({
 
   },
 
-  //获取搜索框输入的文字
+  //获取搜索框输入的文字，并存入缓存
   onInput: function(event) {
     var that = this
     var val = event.detail.value
@@ -143,22 +146,9 @@ Page({
   },
 
   onSearch: function(event) {
-
     console.log("你点击了键盘搜索键")
     wx.navigateTo({
       url: '/pages/search_detail/search_detail',
     })
   },
-
-  // onSearch: function(event) {
-  //   var that = this
-
-  //   var searchpath = wx.getStorageSync('input')
-  //   that.setData({
-  //     iValue: searchpath
-  //   })
-  //   console.log(that.iValue)
-  // }
-
-
 })

@@ -1,2 +1,25 @@
-<!--pages/recoverable-garbage/recoverable-garbage.wxml-->
-<text>pages/recoverable-garbage/recoverable-garbage.wxml</text>
+<view class="box">
+  <view class="garbage_title">
+    <!-- 图标区域 -->
+    <view>
+      <image src="/images/recoverable.png" class="img_size"></image>
+    </view>
+    <!-- 简介 -->
+    <view class="text_size">可回收物就是可以再生循环的垃圾。本身或材质可再利用的纸类、硬纸板、玻璃、塑料、金属、塑料包装，与这些材质有关的如：报纸、杂志、广告单及其它干净的纸类等皆可回收。</view>
+  </view>
+
+  <view class="main_pic">
+    <image src="/images/recoverable-list.png"></image>
+  </view>
+
+  <view class="main_body">
+    <view class="main_body_title">可回收物投放指导</view>
+    <view class="main_body_text">
+    <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
+      <view class="text_style">
+        {{item.data}}
+      </view>
+      </block>
+    </view>
+  </view>
+</view>

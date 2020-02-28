@@ -26,8 +26,6 @@ Page({
       success: function(res) {
         const latitude = res.latitude
         const longitude = res.longitude
-        const speed = res.speed
-        const accuracy = res.accuracy
         that.getlocal(latitude, longitude)
       },
       fail: function(res) {
@@ -122,6 +120,7 @@ Page({
 
   // 获取位置
   onLoad: function(options) {
+    // 页面加载时获取位置
     this.getUserLocation()
   },
 
@@ -174,6 +173,8 @@ Page({
   onShareAppMessage: function() {
 
   },
+  
+  // 点击相应的垃圾分别跳转到相关详情页面
   toRecoverable: function(event) {
     wx.navigateTo({
       url: '/pages/recoverable-garbage/recoverable-garbage',

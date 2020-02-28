@@ -1,12 +1,10 @@
 {
   "pages": [
-     
+
     "pages/index/index",
     "pages/details/details",
-    "pages/text/text",
     "pages/user/user",
-  "pages/search_detail/search_detail",
-
+    "pages/search_detail/search_detail",
     "pages/recoverable-garbage/recoverable-garbage",
     "pages/harmful-waste/harmful-waste",
     "pages/kitchen-waste/kitchen-waste",
@@ -51,7 +49,7 @@
   },
   "permission": {
     "scope.userLocation": {
-      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      "desc": "你的位置信息将用于获取相关新闻"
     }
   }
 }

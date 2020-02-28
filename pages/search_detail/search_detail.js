@@ -6,8 +6,6 @@ Page({
    */
   data: {
    
-    
-
   },
 
   /**
@@ -15,11 +13,10 @@ Page({
    */
   onLoad: function(options) {
     var that = this
+    // 页面加载时读取缓存中的信息
     var tempFilePaths = wx.getStorageSync('picture')
-    var searchpath = wx.getStorageSync('input')
     this.setData({
       userimage: tempFilePaths[0],
-      text:searchpath
     })
 
 
@@ -30,10 +27,11 @@ Page({
    */
   onReady: function() {
     var that = this
+    // 将读取到的数据发送到服务器
     wx.request({
       url: 'https://recover2.market.alicloudapi.com/recover_word',
       data: {
-        name: wx.getStorageSync('input')
+        name: wx.getStorageSync('input') //读取缓存中用户输入的信息
       },
       method: 'get',
       header: {
@@ -44,6 +42,7 @@ Page({
       success(res) {
         // console.log(res.data)
         // console.log(res.data.data.list)
+        // 如果成功就执行处理数据
         that.processGarbageData(res.data.data)
 
       },
@@ -52,14 +51,14 @@ Page({
 
       },
       complete: function (res) {
-        console.log(res.data.data);
+        console.log("搜索完成！");
       }
 
     })
   },
-
+  // 处理服务器返回的数据
   processGarbageData: function(arbageInfo){
-    var garbageData = [];
+    var garbageData = [];//存放筛选过的数据
     for (var idx in arbageInfo.list){
       var list = arbageInfo.list[idx];
       var name = list.name;

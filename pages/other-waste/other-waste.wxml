@@ -1,2 +1,25 @@
-<!--pages/other-waste/other-waste.wxml-->
-<text>pages/other-waste/other-waste.wxml</text>
+<view class="box">
+  <view class="garbage_title">
+    <!-- 图标区域 -->
+    <view>
+      <image src="/images/other.png" class="img_size"></image>
+    </view>
+    <!-- 简介 -->
+    <view class="text_size">其他垃圾指危害较小，但无再次利用价值的垃圾，一般采取填埋、焚烧、卫生分解等方法处理，部分还可以使用生物分解的方法解决，如放蚯蚓等。是可回收垃圾、厨余垃圾、有害垃圾剩余下来的一种垃圾。</view>
+  </view>
+
+  <view class="main_pic">
+    <image src="/images/other-list.png"></image>
+  </view>
+
+  <view class="main_body">
+    <view class="main_body_title">其他垃圾(干垃圾)投放指导</view>
+    <view class="main_body_text">
+    <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
+      <view class="text_style">
+        {{item.data}}
+      </view>
+      </block>
+    </view>
+  </view>
+</view>
