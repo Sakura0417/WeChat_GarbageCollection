@@ -25,25 +25,25 @@
 }
 
 .recoverable-garbage {
-  background-color: lightskyblue;
+  background-color: rgb(33, 82, 135);
   border-radius: 110rpx 110rpx 38rpx 110rpx;
   margin: 0 10rpx 10rpx 0;
 }
 
 .harmful-waste {
-  background-color: red;
+  background-color: rgb(234, 62, 48);
   border-radius: 110rpx 110rpx 110rpx 38rpx;
   margin: 0 0 10rpx 10rpx;
 }
 
 .kitchen-waste {
-  background-color: lightgreen;
+  background-color: rgb(5, 130, 64);
   border-radius: 110rpx 38rpx 110rpx 110rpx;
   margin: 10rpx 10rpx 0 0;
 }
 
 .other-waste {
-  background-color: lightgray;
+  background-color: rgb(46, 44, 42);
   border-radius: 38rpx 110rpx 110rpx 110rpx;
   margin: 10rpx 0 0 10rpx;
 }
@@ -56,6 +56,7 @@
 
 .garbage-text {
   margin-top: 30rpx;
+  color: white;
 }
 
 .news-box {

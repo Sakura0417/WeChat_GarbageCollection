@@ -41,9 +41,17 @@ Page({
 
       success(res) {
         // console.log(res.data)
-        // console.log(res.data.data.list)
+        console.log(res.data.data.list)
+
         // 如果成功就执行处理数据
-        that.processGarbageData(res.data.data)
+        if (res.data.data.list===undefined){
+          that.setData({
+            name:"对不起，暂时找不到相关信息"
+          })
+        } else {
+          that.processGarbageData(res.data.data)
+        }
+    
 
       },
       fail: function (res) {
