@@ -1,0 +1,9 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <block wx:for="{{garbageinfo}}" wx:for-item="item" wx:key="key">
+    <view class="garbage_list">
+      <view class="garbage_name">{{item.name}}</view>
+      <view class="garbage_info">{{item.category}}</view>
+    </view>
+  </block>
+</view>

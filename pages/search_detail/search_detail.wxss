@@ -1,0 +1,29 @@
+/* pages/detail/detail.wxss */
+page {
+  background-color: #e0eee8;
+}
+
+.container{
+padding: 10px 20px;
+  align-content: center;
+}
+.garbage_list{
+
+padding: 16rpx 40rpx ;
+margin: 24rpx;
+width: 600rpx;
+border-radius: 30rpx;
+line-height: 108rpx;
+background-color: #fffbf0;
+
+}
+
+
+.garbage_name{
+  float: left;
+  display: block;
+}
+.garbage_info{
+  float:right;
+  display: block;
+}

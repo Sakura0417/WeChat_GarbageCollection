@@ -1,11 +1,12 @@
 {
   "pages": [
+     
     "pages/index/index",
     "pages/details/details",
     "pages/text/text",
     "pages/user/user",
-    "pages/camera/camera",
-    "pages/detail/detail",
+  "pages/search_detail/search_detail",
+
     "pages/recoverable-garbage/recoverable-garbage",
     "pages/harmful-waste/harmful-waste",
     "pages/kitchen-waste/kitchen-waste",

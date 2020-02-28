@@ -1,8 +1,0 @@
-<view class="container">
-  <view>
-    <button type="default" bindtap="gotoShow" >点击上传照片</button> 
-  </view>
-  <view>
-    <image class= "show-image" mode="aspectFitf" src="{{src}}"></image>
-  </view>
-</view>

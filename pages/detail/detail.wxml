@@ -1,4 +1,0 @@
-<!--pages/detail/detail.wxml-->
-
-<image mode="widthFix" src="{{userimage}}"></image>
-<text>{{text}}</text>

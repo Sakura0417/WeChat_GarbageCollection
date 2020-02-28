@@ -67,7 +67,7 @@ Page({
 
   ontaps: function(event) {
     wx.navigateTo({
-      url: '/pages/detail/detail',
+      url: '/pages/search_detail/search_detail',
     })
   },
 
@@ -95,7 +95,7 @@ Page({
             },
             complete: function(res) {
               wx.navigateTo({
-                url: '/pages/detail/detail',
+                url: '/pages/search_detail/search_detail',
               })
             },
           })
@@ -115,7 +115,7 @@ Page({
             },
             complete: function(res) {
               wx.navigateTo({
-                url: '/pages/detail/detail',
+                url: '/pages/search_detail/search_detail',
               })
             },
           })
@@ -146,7 +146,7 @@ Page({
 
     console.log("你点击了键盘搜索键")
     wx.navigateTo({
-      url: '/pages/detail/detail',
+      url: '/pages/search_detail/search_detail',
     })
   },
 
