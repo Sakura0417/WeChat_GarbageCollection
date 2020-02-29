@@ -41,12 +41,20 @@ Page({
 
       success(res) {
         // console.log(res.data)
-        console.log(res.data.data.list)
+        console.log(res.data.data)
 
         // 如果成功就执行处理数据
-        if (res.data.data.list===undefined){
-          that.setData({
-            name:"对不起，暂时找不到相关信息"
+        if (res.data.data.length==0){
+          console.log("找不到相关信息")
+          wx.showModal({
+            title: '提示',
+            content: '找不到相关信息，请重新搜索',
+            showCancel:false,
+            success(res){
+              wx.navigateBack({
+                delta: 2
+              })
+            }
           })
         } else {
           that.processGarbageData(res.data.data)
@@ -77,7 +85,7 @@ Page({
       }
       garbageData.push(temp)
     }
-    console.log(garbageData)
+    // console.log(garbageData)
     this.setData({
       garbageinfo:garbageData
     })

@@ -12,6 +12,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var garbageKind = [
+      {
+        kind: "电池类：",
+        data: "纽扣电池、充电电池（如手机电池）、铅酸电池、蓄电池等。不含普通干电池（如 1号、5号、7号电池，因具生产已达到国家低汞或无汞技术要求，现作为其他垃圾投放）等。"
+      },
+      {
+        kind: "含汞类：",
+        data: "废荧光灯管、废节能灯、废水银温度计、废水银血压计、 荧光棒、水印体温计、水银血压计等。"
+      },
+      {
+        kind: "费药类：",
+        data: "过期药品、药片、过期胶囊药品、药品包装等。"
+      },
+      {
+        kind: "油漆、废农药类:",
+        data: "废油漆桶、染发剂壳、洗甲水、过期指甲油、消毒液、老鼠药、杀虫剂等。"
+      },
+      {
+        kind: "废胶片及废相纸类：",
+        data: "x光片等感光胶片、相片底片等。"
+      },
+    ]
     var garbageData = [{
       data: "1、分类投放有害垃圾时，应注意轻放。"
     },
@@ -29,7 +51,8 @@ Page({
     },
     ]
     this.setData({
-      textData: garbageData
+      textData: garbageData,
+      kindData: garbageKind
     })
   },
 

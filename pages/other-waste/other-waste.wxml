@@ -13,6 +13,19 @@
   </view>
 
   <view class="main_body">
+    <view class="main_body_title">其他垃圾主要类型</view>
+    <view class="tips">其他垃圾包括砖瓦陶瓷、渣土、卫生间废纸、瓷器碎片等难以回收的废弃物。</view>
+    <view class="main_body_text">
+      <block wx:for="{{kindData}}" wx:for-item="item" wx:key="key">
+        <view class="kind_title">{{item.kind}}</view>
+        <view class="text_style">
+          {{item.data}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="main_body">
     <view class="main_body_title">其他垃圾(干垃圾)投放指导</view>
     <view class="main_body_text">
     <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">

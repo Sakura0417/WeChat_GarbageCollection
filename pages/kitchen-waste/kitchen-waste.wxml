@@ -13,6 +13,19 @@
   </view>
 
   <view class="main_body">
+    <view class="main_body_title">厨余垃圾主要类型</view>
+    <view class="tips">主要包括食材废料、剩菜剩饭、过期食品、瓜皮果核、花卉绿植、中药药渣等易腐的生物质生活废弃物。</view>
+    <view class="main_body_text">
+      <block wx:for="{{kindData}}" wx:for-item="item" wx:key="key">
+        <view class="kind_title">{{item.kind}}</view>
+        <view class="text_style">
+          {{item.data}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="main_body">
     <view class="main_body_title">厨余垃圾(湿垃圾)投放指导</view>
     <view class="main_body_text">
     <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">

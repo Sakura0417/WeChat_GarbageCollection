@@ -1,4 +1,3 @@
-/* pages/other-waste/other-waste.wxss */
 /* pages/recoverable-garbage/recoverable-garbage.wxss */
 
 .box {
@@ -27,10 +26,13 @@
 }
 
 .garbage_title  .text_size {
-  margin: 0 20rpx 0 20rpx;
+  margin: 0 40rpx 0 40rpx;
   font-family: '宋体';
   text-indent: 2em;
   text-align: justify;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: rgb(46, 44, 42);
 }
 
 .main_pic {
@@ -41,30 +43,58 @@
   border-top: 1rpx solid gainsboro;
   padding-top: 45rpx;
 }
-.main_pic image{
+
+.main_pic image {
   width: 509.4rpx;
   height: 363.2rpx;
 }
 
 .main_body {
-
-    border-top: 1rpx solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25rpx;
+  border-top: 1rpx solid gainsboro;
   padding-top: 45rpx;
   width: 600rpx;
 }
-.main_body .main_body_title{
+
+.main_body .main_body_title {
   text-align: center;
   font-family: '宋体';
   font-size: 38rpx;
 }
-.main_body .main_body_text{
+
+.main_body .main_body_text {
   margin-top: 30rpx;
 }
-.main_body .main_body_text .text_style{
+
+.main_body .main_body_text .text_style {
   padding: 10rpx 0;
-    font-family: '宋体';
+  font-family: '宋体';
   text-indent: 2em;
   text-align: justify;
   font-size: 34rpx;
   line-height: 50rpx;
+}
+
+.tips {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40rpx;
+  width: 580rpx;
+  height: 120rpx;
+  line-height: 48rpx;
+  border-radius: 36rpx;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0rpx 0rpx 5rpx 3rpx lightgray;
+  padding: 20rpx;
+  font-family: '宋体';
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.kind_title {
+  font-weight: bold;
 }

@@ -13,12 +13,25 @@
   </view>
 
   <view class="main_body">
+    <view class="main_body_title">可回收物主要类型</view>
+    <view class="tips">主要包括废纸、塑料、玻璃、金属和纺织物五大类生活垃圾，有害垃圾、电子/电器垃圾和电池三类特殊危害垃圾以及废弃家具类垃圾。</view>
+    <view class="main_body_text">
+      <block wx:for="{{kindData}}" wx:for-item="item" wx:key="key">
+        <view class="kind_title">{{item.kind}}</view>
+        <view class="text_style">
+          {{item.data}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="main_body">
     <view class="main_body_title">可回收物投放指导</view>
     <view class="main_body_text">
-    <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
-      <view class="text_style">
-        {{item.data}}
-      </view>
+      <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
+        <view class="text_style">
+          {{item.data}}
+        </view>
       </block>
     </view>
   </view>
