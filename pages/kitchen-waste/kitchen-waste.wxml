@@ -28,10 +28,10 @@
   <view class="main_body">
     <view class="main_body_title">厨余垃圾(湿垃圾)投放指导</view>
     <view class="main_body_text">
-    <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
-      <view class="text_style">
-        {{item.data}}
-      </view>
+      <block wx:for="{{textData}}" wx:for-item="item" wx:key="key">
+        <view class="text_style">
+          {{item.data}}
+        </view>
       </block>
     </view>
   </view>

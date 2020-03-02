@@ -146,9 +146,21 @@ Page({
   },
 
   onSearch: function(event) {
-    console.log("你点击了键盘搜索键")
-    wx.navigateTo({
-      url: '/pages/search_detail/search_detail',
-    })
+    if (wx.getStorageSync('input')==""){
+      console.log("请输入正确名称")
+      wx.showToast({
+        title: '请输入名字',
+        icon:'none',
+        duration:2000,
+        mask:true,
+        image:'../../images/failed.png'
+      })
+    }else{
+      console.log(wx.getStorageSync('input'))
+      wx.navigateTo({
+        url: '/pages/search_detail/search_detail',
+      })
+    }
+
   },
 })

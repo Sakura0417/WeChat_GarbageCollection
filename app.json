@@ -1,15 +1,14 @@
 {
   "pages": [
-
     "pages/index/index",
     "pages/details/details",
     "pages/user/user",
     "pages/search_detail/search_detail",
+    "pages/goods/goods",
     "pages/recoverable-garbage/recoverable-garbage",
     "pages/harmful-waste/harmful-waste",
     "pages/kitchen-waste/kitchen-waste",
-    "pages/other-waste/other-waste",
-    "pages/goods/goods"
+    "pages/other-waste/other-waste"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -29,13 +28,13 @@
       },
       {
         "pagePath": "pages/details/details",
-        "text": "详情",
+        "text": "分类百科",
         "iconPath": "/images/detail.png",
         "selectedIconPath": "/images/detail-selected.png"
       },
       {
         "pagePath": "pages/goods/goods",
-        "text": "商品",
+        "text": "环保商店",
         "iconPath": "/images/goods.png",
         "selectedIconPath": "/images/goods-selected.png"
       },

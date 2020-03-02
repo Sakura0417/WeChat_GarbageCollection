@@ -1,2 +1,89 @@
 <!--pages/goods/goods.wxml-->
-<text>pages/goods/goods.wxml</text>
+<view class="recommend_box">
+  <view class="recommend">
+    <view class="font_size">推荐商品</view>
+  </view>
+</view>
+<view class="goods_list">
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+
+  <view class="goods">
+    <image class="goods_img" src="/images/goods/1.jpg" />
+    <view class="price">
+      <view class="rmb_icon">¥</view>
+      <view class="rmb_price">19.9</view>
+    </view>
+    <text class="good_name">五月花 中号分类金属网垃圾桶 厨房卫生间家用清洁桶 办公环保纸篓</text>
+  </view>
+</view>

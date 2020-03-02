@@ -18,16 +18,32 @@ page {
   height: 80rpx;
   width: 580rpx;
   border-radius: 35rpx;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  /* flex-direction: row; *//* align-items: center; */
   box-shadow: 1rpx 1rpx 5rpx 1rpx rgb(134, 130, 130);
-  position: relative;
 }
 
 .searchbar .searchbar-input {
+  float: left;
+  margin: 20rpx 0 0 40rpx;
+}
+
+.searchbar .search_icon_style {
+  float: left;
   margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.search_button {
+  float: right;
+  width: 96rpx;
+  height: 65rpx;
+  text-align: center;
+  line-height: 65rpx;
+  color: white;
+  background-color: #80989b;
+  border-radius: 25rpx;
+  margin: 8.5rpx 10rpx 0rpx 0rpx;
 }
 
 .camerabox {
@@ -47,7 +63,7 @@ page {
   height: 120rpx;
 }
 
-.background-img{
+.background-img {
   height: 420rpx;
   width: 650rpx;
   overflow: hidden;

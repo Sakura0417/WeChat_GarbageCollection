@@ -26,11 +26,66 @@
   <!-- 获取定位以及居住地相关垃圾分类新闻 -->
 
   <view class="get-user-location">
-    <image src="../../images/location.png" class="img-size"></image>
-    <text> {{nation}} {{province}} {{city}} {{district}}</text>
+    <view class="news_topbar">
+      <image src="../../images/news_icon.png" class="news_icon"></image>
+    </view>
+    <text> {{nation}} {{province}} {{city}}</text>
   </view>
 
   <view class="news-box">
-    <view>相关城市新闻列表</view>
+    <view class="news_title_AND_img">
+
+      <view class="news_title_info">
+        <view class="news_title">
+          习惯性打压老二？美国打错了算盘，中国不同于以往的“老二”
+        </view>
+
+        <view class="news_author_times">
+          <view class="news_author">慷慨高歌</view>
+          <view class="news_times">2020-03-01 11:28:45</view>
+        </view>
+      </view>
+
+      <image class="news_img" src="../../images/goods/new.jpg"></image>
+
+    </view>
+  </view>
+
+  <view class="news-box">
+    <view class="news_title_AND_img">
+
+      <view class="news_title_info">
+        <view class="news_title">
+          习惯性打压老二？美国打错了算盘，中国不同于以往的“老二”
+        </view>
+
+        <view class="news_author_times">
+          <view class="news_author">慷慨高歌</view>
+          <view class="news_times">2020-03-01 11:28:45</view>
+        </view>
+      </view>
+
+      <image class="news_img" src="../../images/goods/new.jpg"></image>
+
+    </view>
+  </view>
+
+  <view class="news-box">
+    <view class="news_title_AND_img">
+
+      <view class="news_title_info">
+        <view class="news_title">
+          习惯性打压老二？美国打错了算盘，中国不同于以往的“老二”
+        </view>
+
+        <view class="news_author_times">
+          <view class="news_author">慷慨高歌</view>
+          <view class="news_times">2020-03-01 11:28:45</view>
+        </view>
+      </view>
+
+      <image class="news_img" src="../../images/goods/new.jpg"></image>
+
+    </view>
   </view>
 </view>

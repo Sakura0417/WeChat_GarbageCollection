@@ -1,1 +1,78 @@
 /* pages/goods/goods.wxss */
+
+page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e0eee8;
+}
+
+.recommend_box {
+  width: 740rpx;
+}
+
+.recommend {
+  margin-top: 20rpx;
+  text-align: center;
+  width: 210rpx;
+  height: 88rpx;
+  float: left;
+  color: white;
+  border-radius: 44rpx;
+  background-color: rgba(128, 171, 169,0.7);
+  box-shadow: 0rpx 0rpx 5rpx 3rpx lightgray;
+}
+
+.recommend .font_size {
+  font-size: 38rpx;
+  line-height: 88rpx;
+}
+
+.goods_list {
+  display: block;
+  width: 755rpx;
+}
+
+.goods_list .goods {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15rpx;
+  width: 345rpx;
+  height: 530rpx;
+  border-radius: 25rpx;
+  box-shadow: 0rpx 0rpx 5rpx 3rpx lightgray;
+  background-color: white;
+}
+
+.goods_list .goods .goods_img {
+  margin-top: rpx;
+  width: 345rpx;
+  border-radius: 25rpx 25rpx 0 0;
+  height: 345rpx;
+}
+
+.goods_list .goods .price {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  color: red;
+}
+
+.goods_list .goods .price .rmb_icon {
+  font-size: 32rpx;
+}
+
+.goods_list .goods .price .rmb_price {
+  font-size: 40rpx;
+}
+
+.goods_list .goods .good_name {
+  font-family: 'microsoft yahei';
+  text-indent: 2em;
+  text-align: justify;
+  padding: 0 20rpx 0 20rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+}
