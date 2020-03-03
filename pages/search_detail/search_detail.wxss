@@ -8,23 +8,65 @@ page {
   padding: 10px 20px;
   align-content: center;
 }
+.recommend_box {
+  width: 740rpx;
+}
 
-.garbage_list {
+.recommend {
+  margin-top: 20rpx;
+  text-align: center;
+  width: 210rpx;
+  height: 88rpx;
+  float: left;
+  color: white;
+  border-radius: 44rpx;
+  background-color: rgba(128, 171, 169,0.7);
+  box-shadow: 0rpx 0rpx 5rpx 3rpx lightgray;
+}
+
+.recommend .font_size {
+  font-size: 38rpx;
+  line-height: 88rpx;
+}
+.garbage_Similarity {
   padding: 16rpx 40rpx;
-  margin: 24rpx;
+  margin: 34rpx 24rpx 10rpx 24rpx;
   width: 600rpx;
+  height: 64rpx;
+  border-radius: 30rpx;
+  line-height: 64rpx;
+  background-color: #bbc8e6;
+  box-shadow: 3rpx 3rpx 5rpx 3rpx lightgray;
+}
+
+.garbage_name,.Similarity_name{
+  float: left;
+}
+
+.garbage_info,.Similarity {
+  float: right;
+}
+.garbage_list{
+    padding: 16rpx 40rpx;
+  margin: 48rpx 24rpx 5rpx 0;
+  float: right;
+  width: 550rpx;
+  height: 108rpx;
   border-radius: 30rpx;
   line-height: 108rpx;
   background-color: #fffbf0;
   box-shadow: 3rpx 3rpx 5rpx 3rpx lightgray;
 }
+.garbage_list_hide{
 
-.garbage_name {
-  float: left;
-  display: block;
-}
-
-.garbage_info {
+    padding: 16rpx 40rpx;
+  margin: 5rpx 24rpx 5rpx 0;
   float: right;
-  display: block;
+  width: 550rpx;
+  height: 108rpx;
+  border-radius: 30rpx;
+  line-height: 108rpx;
+  background-color: #fffbf0;
+  box-shadow: 3rpx 3rpx 5rpx 3rpx lightgray;
+
 }

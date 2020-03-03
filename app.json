@@ -1,9 +1,10 @@
 {
   "pages": [
+
     "pages/index/index",
     "pages/details/details",
     "pages/user/user",
-    "pages/search_detail/search_detail",
+        "pages/search_detail/search_detail",
     "pages/goods/goods",
     "pages/recoverable-garbage/recoverable-garbage",
     "pages/harmful-waste/harmful-waste",

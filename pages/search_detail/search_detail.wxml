@@ -1,9 +1,25 @@
 <!--pages/detail/detail.wxml-->
 <view class="container">
+  <view class="recommend_box">
+    <view class="recommend">
+      <view class="font_size">搜索结果</view>
+    </view>
+  </view>
   <block wx:for="{{garbageinfo}}" wx:for-item="item" wx:key="key">
-    <view class="garbage_list">
+    <view wx:if="{{liststyle==true}}" class="garbage_list">
       <view class="garbage_name">{{item.name}}</view>
       <view class="garbage_info">{{item.category}}</view>
     </view>
   </block>
+  
+  <view wx:if="{{liststyle==false}}" wx:for="{{garbageSimilarityData}}" wx:for-item="Garbageitem" wx:key="id">
+    <view class="garbage_Similarity">
+      <view class="Similarity_name">{{Garbageitem.keyword}}</view>
+      <view class="Similarity">相似度：{{Garbageitem.score*100}}%</view>
+    </view>
+    <view class="garbage_list_hide" wx:for="{{Garbageitem.list}}" wx:for-item="listitem" wx:key="id">
+      <view class="garbage_name">{{listitem.name}}</view>
+      <view class="garbage_info">{{listitem.category}}</view>
+    </view>
+  </view>
 </view>

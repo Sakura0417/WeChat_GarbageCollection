@@ -14,12 +14,12 @@
 
     <view class="kitchen-waste" bindtap="toKitchen">
       <image class="garbage-icon" src="../../images/kitchen-waste.png"></image>
-      <text class="garbage-text">厨余垃圾</text>
+      <text class="garbage-text">湿垃圾</text>
     </view>
 
     <view class="other-waste" bindtap="toOther">
       <image class="garbage-icon" src="../../images/other-waste.png"></image>
-      <text class="garbage-text">其他垃圾</text>
+      <text class="garbage-text">干垃圾</text>
     </view>
   </view>
 
