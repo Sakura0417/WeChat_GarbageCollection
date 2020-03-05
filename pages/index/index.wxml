@@ -3,7 +3,7 @@
   <!-- 搜索框 -->
   <view class="searchbar">
     <icon type="search" size="30" class="search_icon_style"></icon>
-    <input class="searchbar-input" type="text" confirm-type="search" placeholder="请输入垃圾名称" bindinput="onInput" bindconfirm="onSearch" value="{{name}}" bindblur="removetext" />
+    <input class="searchbar-input" type="text" confirm-type="search" placeholder="请输入垃圾名称" bindinput="onInput" bindconfirm="onSearch" value="{{name}}" />
     <view class="search_button" bindtap="onSearch">搜索</view>
   </view>
   <!-- 相机框 -->

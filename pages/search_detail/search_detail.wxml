@@ -15,7 +15,7 @@
   <view wx:if="{{liststyle==false}}" wx:for="{{garbageSimilarityData}}" wx:for-item="Garbageitem" wx:key="id">
     <view class="garbage_Similarity">
       <view class="Similarity_name">{{Garbageitem.keyword}}</view>
-      <view class="Similarity">相似度：{{Garbageitem.score*100}}%</view>
+      <view class="Similarity">相似度：{{Garbageitem.score}}%</view>
     </view>
     <view class="garbage_list_hide" wx:for="{{Garbageitem.list}}" wx:for-item="listitem" wx:key="id">
       <view class="garbage_name">{{listitem.name}}</view>

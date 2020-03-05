@@ -83,12 +83,12 @@ Page({
           'Authorization': 'APPCODE ' + 'c977859da234401b9dbe99c27b0a14d1',
         },
         success(res) {
-          // console.log(res.data.data)
-          that.setData({
-            garbageSimilarityData: res.data.data,
-            liststyle: false
-          })
-          // that.processGarbageImgData(res.data)
+
+          // that.setData({
+          //   garbageSimilarityData: res.data.data,
+          //   liststyle: false
+          // })
+          that.processGarbageImgData(res.data)
         },
         fail: function(res) {
           console.log("失败")
@@ -100,6 +100,44 @@ Page({
         }
       })
     }
+  },
+
+
+  // 处理服务器返回的数据
+  processGarbageImgData: function(arbageInfo) {
+    var that = this;
+    var garbageSimilarityData = []; //存放筛选过的数据
+    for (var idx in arbageInfo.data) {
+      var garbagelist = []
+
+      for (var id_x in arbageInfo.data[idx].list) {
+        var list = arbageInfo.data[idx].list[id_x];
+        var name = list.name;
+        var category = list.category;
+        var temp1 = {
+          name: name,
+          category: category,
+        }
+        garbagelist.push(temp1)
+
+      };
+
+      var subject = arbageInfo.data[idx];
+      var score = (subject.score * 100).toPrecision(4);
+      // console.log(typeof score);
+      var keyword = subject.keyword;
+      var temp = {
+        score: score,
+        keyword: keyword,
+        list: garbagelist
+      }
+      garbageSimilarityData.push(temp)
+    }
+    this.setData({
+      garbageSimilarityData: garbageSimilarityData,
+      liststyle: false
+    })
+    console.log(that.data)
   },
 
   /**
