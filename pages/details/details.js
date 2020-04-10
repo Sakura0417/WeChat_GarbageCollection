@@ -20,25 +20,25 @@ Page({
   },
 
   // 获取用户地理位置（经纬度）
-  getLocation: function() {
+  getLocation: function () {
     var that = this
     wx.getLocation({
-      success: function(res) {
+      success: function (res) {
         const latitude = res.latitude
         const longitude = res.longitude
         that.getlocal(latitude, longitude)
       },
-      fail: function(res) {
+      fail: function (res) {
         console.log(res)
       }
     })
   },
 
   // 根据经纬度获取城市信息
-  getlocal: function(latitude, longitude) {
+  getlocal: function (latitude, longitude) {
     var that = this
     qqmapsdk.reverseGeocoder({
-      success: function(res) {
+      success: function (res) {
         location: {
           latitude: latitude
           longitude: longitude
@@ -48,25 +48,33 @@ Page({
         const province = res.result.ad_info.province
         const city = res.result.ad_info.city
         const district = res.result.ad_info.district
+        const town = res.result.address_reference.town.title
+        const street = res.result.address_reference.street
+        const landmark = res.result.address_reference.landmark_l2.title
         console.log(nation)
         console.log(province)
         console.log(city)
-        console.log(district)
+        console.log(town)
+        console.log(street)
+        console.log(landmark)
         that.setData({
           nation: nation,
           province: province,
           city: city,
-          district: district
+          district: district,
+          town: town,
+          street: street,
+          landmark: landmark
         })
       }
     })
   },
 
   // 发送请求获取定位权限
-  getUserLocation: function() {
+  getUserLocation: function () {
     var that = this
     wx.getSetting({
-      success: function(res) {
+      success: function (res) {
         console.log(JSON.stringify(res))
         // 如果没有授权则请求授权
         if (res.authSetting['scope.userLocation'] != true && res.authSetting['scope.userLocation'] != undefined) {
@@ -85,7 +93,7 @@ Page({
               // 如果用户同意授权 
               else if (res.confirm) {
                 wx.openSetting({
-                  success: function(authData) {
+                  success: function (authData) {
                     if (authData.authSetting['scope.userLocation' == true]) {
                       wx.showToast({
                           title: '获取位置授权成功',
@@ -119,7 +127,7 @@ Page({
    */
 
   // 获取位置
-  onLoad: function(options) {
+  onLoad: function (options) {
     // 页面加载时获取位置
     this.getUserLocation()
   },
@@ -128,69 +136,69 @@ Page({
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
+  onReady: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
+  onShow: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
+  onHide: function () {
 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
+  onUnload: function () {
 
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   },
-  
+
   // 点击相应的垃圾分别跳转到相关详情页面
-  toRecoverable: function(event) {
+  toRecoverable: function (event) {
     wx.navigateTo({
       url: '/pages/recoverable-garbage/recoverable-garbage',
     })
   },
-  toHarmful: function(event) {
+  toHarmful: function (event) {
     wx.navigateTo({
       url: '/pages/harmful-waste/harmful-waste',
     })
   },
-  toKitchen: function(event) {
+  toKitchen: function (event) {
     wx.navigateTo({
       url: '/pages/kitchen-waste/kitchen-waste',
     })
   },
-  toOther: function(event) {
+  toOther: function (event) {
     wx.navigateTo({
       url: '/pages/other-waste/other-waste',
     })

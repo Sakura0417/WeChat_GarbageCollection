@@ -4,7 +4,7 @@
     "pages/index/index",
     "pages/details/details",
     "pages/user/user",
-        "pages/search_detail/search_detail",
+    "pages/search_detail/search_detail",
     "pages/goods/goods",
     "pages/recoverable-garbage/recoverable-garbage",
     "pages/harmful-waste/harmful-waste",
@@ -20,8 +20,7 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/index/index",
         "text": "主页",
         "iconPath": "/images/home.png",

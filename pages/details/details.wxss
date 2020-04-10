@@ -1,4 +1,7 @@
 /* pages/details/details.wxss */
+page {
+  background-color: #e0eee8;
+}
 
 .container {
   display: flex;
@@ -125,14 +128,14 @@
   line-height: 48rpx;
 }
 
-.news_title_AND_img .news_title_info  .news_author_times {
+.news_title_AND_img .news_title_info .news_author_times {
   display: block;
   font-size: 24rpx;
   padding: 0 20rpx 0 20rpx;
   color: #999;
 }
 
-.news_title_AND_img .news_title_info  .news_author_times .news_author {
+.news_title_AND_img .news_title_info .news_author_times .news_author {
   float: left;
 }
 
