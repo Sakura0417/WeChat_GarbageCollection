@@ -16,7 +16,7 @@ page {
   background-color: white;
   margin-top: 200rpx;
   height: 80rpx;
-  width: 580rpx;
+  width: 600rpx;
   border-radius: 35rpx;
   display: block;
   /* flex-direction: row; *//* align-items: center; */
@@ -37,7 +37,7 @@ page {
 .search_button {
   float: right;
   width: 96rpx;
-  height: 65rpx;
+  /* height: 65rpx; */
   text-align: center;
   line-height: 65rpx;
   color: white;
